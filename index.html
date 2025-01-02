@@ -6,7 +6,7 @@
     <title>Tech Tronics</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7522523243431966"
      crossorigin="anonymous"></script>
-    <style>
+     <style>
         /* Reset and base styles */
         * {
             margin: 0;
@@ -369,8 +369,6 @@
             <a href="project-tutorial.html">Projects Tutorial</a>
             <a href="notice.html">Announcement</a>
             <button class="bidu-button" onclick="location.href='join-us.html'">Join Us</button>
-
-
         </div>
     </nav>
 
@@ -433,84 +431,22 @@
         <h2>Our Projects</h2>
         <div class="project-cards">
             <div class="project-card">
-                <img src="project1.jpg" alt="coming soon">
-                <h3>coming soon</h3>
-                <p>coming soon.</p>
+                <img src="project1.jpg" alt="Rover Project">
+                <h3>Coming Soon</h3>
+                <p>Details coming soon.</p>
             </div>
             <div class="project-card">
-                <img src="project2.jpg" alt="coming soon">
-                <h3>coming soon</h3>
-                <p>coming soon</p>
+                <img src="project2.jpg" alt="Robotic Arm">
+                <h3>Coming Soon</h3>
+                <p>Details coming soon.</p>
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
-<section class="contact-section" id="contact">
-    <h2>Get in Touch</h2>
-    <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    <div id="thankYouMessage" style="display: none; font-size: 1.2rem; color: green; text-align: center; margin-top: 20px;">
-        Thank you for reaching out! Your message has been sent successfully.
-    </div>
-</section>
-
-
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Tech Tronics. All rights reserved.</p>
     </footer>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();  // Prevent form submission
-            document.getElementById('thankYouMessage').style.display = 'block';
-            document.getElementById('contactForm').reset();  // Reset form fields
-        });
-    </script>
-    <script type="text/javascript">
-        (function(){
-          emailjs.init("Q0qz1COjZI81WAeDJ"); // Replace with your EmailJS User ID
-        })();
-      </script>
-
-<script type="text/javascript">
-    // Initialize EmailJS with your Public API Key
-    (function(){
-      emailjs.init("Q0qz1COjZI81WAeDJ"); // Replace with your EmailJS Public API Key (User ID)
-    })();
-  
-    // Function to send the email when the form is submitted
-    function sendEmail(event) {
-      event.preventDefault(); // Prevent the form from submitting normally
-  
-      // Get the form data
-      const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-      };
-  
-      // Send the email using EmailJS
-      emailjs.send("service_xhfmw4g", "template_cuvvusi", formData)  // Replace with your Service ID and Template ID
-        .then((response) => {
-          // Show the thank you message
-          document.getElementById("thankYouMessage").style.display = "block";
-          // Reset the form
-          document.getElementById("contactForm").reset();
-        }, (error) => {
-          console.log(error);  // Log any error that occurs
-        });
-    }
-  </script>
-  
-  
-    
 
 </body>
 </html>
