@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects Tutorials - Tech Tronics</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7522523243431966"
-     crossorigin="anonymous"></script>
     <style>
         /* Reset and base styles */
         * {
@@ -129,6 +127,48 @@
             padding: 1rem 2rem;
             text-align: center;
         }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .tutorials-section h2 {
+                font-size: 2rem;
+            }
+
+            .tutorial-card {
+                width: 100%;
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                height: 80px;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .tutorials-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .tutorial-card {
+                width: 100%;
+                padding: 1rem;
+            }
+
+            .bidu-button {
+                width: 100%;
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -140,7 +180,6 @@
             <a href="index.html">Home</a>
             <a href="index.html">Team</a>
             <a href="project-tutorial.html">Projects Tutorial</a>
-        
             <a href="notice.html">Announcement</a>
             <button class="bidu-button" onclick="location.href='join-us.html'">Join Us</button>
         </div>
