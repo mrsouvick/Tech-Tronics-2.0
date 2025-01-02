@@ -73,20 +73,6 @@
             background-color: #4331B9;
         }
 
-        /* Hamburger Menu */
-        .menu-icon {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .menu-icon .bar {
-            width: 30px;
-            height: 4px;
-            background-color: var(--text-dark);
-        }
-
         /* Hero section styles */
         .hero {
             display: grid;
@@ -348,30 +334,28 @@
             .contact-form textarea {
                 font-size: 1rem;
             }
+        }
 
+        @media (max-width: 480px) {
             .navbar {
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
             }
 
             .nav-links {
-                display: none;
                 flex-direction: column;
                 gap: 1rem;
-                text-align: center;
-                margin-top: 1rem;
-                width: 100%;
             }
 
-            .nav-links.active {
-                display: flex;
+            .hero h1 {
+                font-size: 2rem;
             }
 
-            .menu-icon {
-                display: flex;
+            .hero p {
+                font-size: 1rem;
             }
         }
-
     </style>
 </head>
 <body>
@@ -379,12 +363,7 @@
     <!-- Navbar -->
     <nav class="navbar">
         <img src="bg-remove.png" alt="Tech Tronics Logo" class="logo">
-        <div class="menu-icon" id="menu-icon">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="nav-links" id="nav-links">
+        <div class="nav-links">
             <a href="/index.html">Home</a>
             <a href="#team">Team</a>
             <a href="user-tutorials.html">Dashboard</a>
@@ -398,7 +377,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Welcome to Tech Tronics<br>Innovation in Robotics</h1>
-            <p style="color: #0040ff;">Join us in our journey of innovation.</p>
+            <p style="color: #ff0000;">Join us in our journey of innovation.</p>
         </div>
         <div class="hero-images">
             <img src="3logo.png" alt="Robotics" class="main-image">
@@ -432,64 +411,46 @@
             <div class="team-member">
                 <img src="surajit-dp.jpeg" alt="Surajit Ghosh">
                 <h3>Surajit Ghosh</h3>
-                <p>Hardware</p>
+                <p>Hardware Expert</p>
             </div>
         </div>
     </section>
 
-    <!-- Slogan Section -->
+    <!-- New Slogan Section -->
     <section class="slogan-section">
         <div class="slogan-content">
-            <h2>Building Future-Ready Robotics</h2>
-            <p>At Tech Tronics, we aim to design and build robots that make a difference.</p>
+            <h2>Empowering Robotics with Innovation</h2>
+            <p>We push the boundaries of technology to create robots that solve real-world problems. Join our mission!</p>
         </div>
         <div class="slogan-images">
-            <img src="techtronics.png" alt="Tech Tronics Logo" class="slogan-image">
+            <img src="logo-2-removebg-.png" alt="Tech Tronics Logo" class="slogan-image">
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
         <h2>Our Projects</h2>
         <div class="project-cards">
             <div class="project-card">
-                <img src="tech1.jpg" alt="Project Image">
-                <h3>Rover Design</h3>
-                <p>Our latest project: a robot designed for exploration.</p>
+                <img src="project1.jpg" alt="Rover Project">
+                <h3>Coming Soon</h3>
+                <p>Details coming soon.</p>
             </div>
             <div class="project-card">
-                <img src="tech2.jpg" alt="Project Image">
-                <h3>Robot Arm</h3>
-                <p>A multi-axis robotic arm designed for precision tasks.</p>
+                <img src="project2.jpg" alt="Robotic Arm">
+                <h3>Coming Soon</h3>
+                <p>Details coming soon.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <div class="contact-form">
-            <form action="#" method="POST">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Tech Tronics. All Rights Reserved.</p>
+        <p>&copy; 2024 Tech Tronics. All rights reserved.</p>
     </footer>
 
-    <script>
-        const menuIcon = document.getElementById('menu-icon');
-        const navLinks = document.getElementById('nav-links');
-
-        menuIcon.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/01/02/01/20250102013131-SD5EN75M.js"></script>
+    
 </body>
 </html>
